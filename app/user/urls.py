@@ -8,4 +8,6 @@ app_name = 'user'
 urlpatterns = [
     path('create/', views.CreateUserView.as_view(), name='create'),
     path('token/', views.CreateTokenViev.as_view(), name='token'),
+    path('me/', views.ManageUserViev.as_view(), name='me'),
+
 ]
